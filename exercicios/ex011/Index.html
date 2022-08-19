@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Abrindo o site em varios tipos de dispositvos ou em tamanhos difernte eno navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/FotoP.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/FotoM.png" 
+        type="image/png">
+        <img src="imagens/FotoG.png" alt="Imagnem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Reproduzir áudio em HTML 5</p>
+    <!-- <audio src="midia/ff.mp3" controls autoplay></audio> Colocar audio com o controle para rodar manualamente-->
+    <audio preload="metadata" autoplay controls> 
+        <source src="midia/ff.mp3" type="audio/mpeg">
+        <source src="midia/ff.ogg" type="audio/ogg">
+        <source src="midia/ff.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio <a href="midia/ff.mp3">clique aqui para fazer o download</a></p>
+    </audio>
+
+    <h1>Reproduzindo vídeo</h1>
+    <p>Reproduzir video</p>
+    <video src="midia/pexels-mikhail-nilov-7677379.mp4"></video>
+
+
+</body>
+</html>
