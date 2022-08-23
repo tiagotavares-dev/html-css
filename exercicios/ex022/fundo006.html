@@ -7,13 +7,21 @@
     <title>Document</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: rgb(63, 59, 59);
             background-image: url(img/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed;*/
+
+             /* shorthand - background
+            ordem = color > image > position > repeat > [size] > attachment
+            o de baixo subistitui o de cima
+            */
+
+            background: rgb(63, 59, 59) url(img/wallpaper002.jpg) center top no-repeat fixed ;
+            background-size: cover;
         }
 
         main{
