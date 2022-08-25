@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(7, 129, 129);
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; ou abaixo que é a melhor opção*/
+    font-variant: small-caps;
+    color: white;
+}
+header > p {
+    padding-bottom: 50px;
+    color: white;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+section.imagem > p {
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face
+
+/*font-family: 'Dancing Script', cursive;
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;*/
+
+   
