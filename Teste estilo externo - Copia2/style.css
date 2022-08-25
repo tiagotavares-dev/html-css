@@ -4,25 +4,56 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@font-face {
+    font-family: 'teste' ;
+    src: url('aldine-721-bt-italic.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(img/topo.jpg);
+    padding: 15px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
 body{
     text-align: center;
-    font-family: 'Rubik Distressed', cursive;
-    font-style: normal;
-    background-color:rgb(255, 210, 8);
-    color: rgb(22, 22, 22);
-    width: 900px;
-    padding: 10px;
-    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-style: bolder;
+    background-color:white;
+    color: rgb(0, 0, 0);
+    width: 100%vh;
+    margin: auto; 
 }
 
-body > ul{ list-style-type: '';
-
+a {
+    text-decoration: none;
+    color: white;
 }
 
-body > img{
-    position: left;
+a:hover {
+    color: rgba(172, 163, 163, 0.747);
+    text-decoration: underline;
 }
 
+
+body > p{
+    padding: 50px;
+}
+
+h1,h2 {
+    font-family: 'teste';
+    font-size: 2em;
+    fornt-weight: normal;
+
+}
 
 p#i1{
     display: inline-block;
@@ -40,7 +71,7 @@ main > p{
 
 h3{
     color: rgb(3, 3, 3);
-    background-color: rgb(240, 20, 20);
+    background-color: rgba(243, 228, 16, 0.829);
 }
 
 main {
@@ -50,4 +81,56 @@ main {
 
 article > ul{
     list-style-type: '';
+}
+
+section {
+    
+    line-height: 1.5em;
+}
+
+section > p > strong {
+    display: inline none;
+    color: black;
+    text-shadow: none;
+    
+}
+
+section.nomal {
+    padding: 10px;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(43, 41, 41, 0.247);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    font-size:;
+}
+
+section#img1 {
+    background-image: url(img/img01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#img2 {
+    background-image: url(img/img02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: rgba(255, 0, 0, 0.856);
+    padding: 10px;
+    margin: 10px;
+}
+
+footer > a{
+    color: black;
+}
+
+footer a:hover {
+    color: rgba(172, 163, 163, 0.747);
+    text-decoration: underline;
 }
