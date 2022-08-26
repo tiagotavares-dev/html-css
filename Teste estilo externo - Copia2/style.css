@@ -128,6 +128,11 @@ section#img2 {
     background-attachment: fixed;
 }
 
+section#img3 {
+    background-image: url(img/img03.jpg);
+    background-attachment: fixed;
+}
+
 footer {
     background-color: rgba(255, 0, 0, 0.856);
     padding: 10px;
