@@ -26,11 +26,20 @@ header {
 body{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-style: bolder;
-    background-color:white;
+    font-size: larger;
+    font-weight:;
+    background-color:rgba(252, 252, 252, 0.76);
     color: rgb(0, 0, 0);
     width: 100%vh;
     margin: auto; 
+}
+
+body > p{
+    padding: 50px;
+}
+
+h3{
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.205);
 }
 
 a {
@@ -41,11 +50,6 @@ a {
 a:hover {
     color: rgba(172, 163, 163, 0.747);
     text-decoration: underline;
-}
-
-
-body > p{
-    padding: 50px;
 }
 
 h1,h2 {
@@ -88,6 +92,10 @@ section {
     line-height: 1.5em;
 }
 
+section.intro{
+    background-image:linear-gradient(orange, yellow);
+}
+
 section > p > strong {
     display: inline none;
     color: black;
@@ -99,14 +107,15 @@ section.nomal {
     padding: 10px;
 }
 
-section.imagem > p{
+section.imagem > p, section.imagem p > strong{
     display: inline-block;
     padding: 10px;
     background-color: rgba(43, 41, 41, 0.247);
     color: white;
     text-shadow: 2px 2px 0px black;
-    font-size:;
+    text-align: center;
 }
+
 
 section#img1 {
     background-image: url(img/img01.jpg);
@@ -115,8 +124,7 @@ section#img1 {
 }
 
 section#img2 {
-    background-image: url(img/img02.jpg);
-    background-repeat: no-repeat;
+    background-image: url(img/img2.jpg);
     background-attachment: fixed;
 }
 
