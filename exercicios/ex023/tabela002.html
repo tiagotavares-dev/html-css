@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgb(78, 85, 85);
+            color: black;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:  rgb(78, 85, 85);
+        }
+
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aqua;
+        }
+        tbody tr:nth-child(odd){
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+        caption = legenda 
+            thead
+                td,tr,th
+            tbody
+                td,tr,th
+            tfoot
+                td,tr,th
+    -->
+
+    <table>
+        <caption>tabela teste</caption>
+        <thead>
+            <tr>
+                <th scope="col">Dados</th>
+                <th scope="col">Money</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>   
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>    
+            <tr><td>Trabalho</td>
+                <td>45 919 100</td>
+            </tr>
+            <tr>
+                <td>Ganhos</td>
+                <td>500 000 00</td>
+            </tr>         
+                
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th> 
+                <td>0000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
