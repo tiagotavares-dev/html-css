@@ -27,7 +27,7 @@
         }
         thead > tr > th{
             position: sticky;
-            top: 0;
+            top: -1px;
             background-color:  rgb(78, 85, 85);
         }
 
@@ -37,8 +37,12 @@
             padding: 10px;
             background-color: aqua;
         }
-        tbody tr:nth-child(odd){
+        tbody tr:nth-child(odd){ /*2n-1*/
             background-color: bisque;
+        }
+
+        tbody tr:nth-child(even){ /*2n*/
+            background-color: white;
         }
     </style>
 </head>
