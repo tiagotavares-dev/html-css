@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        /*.cnome ou col.cnome*/
+        .cnome{
+            background-color: rgb(197, 195, 195);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csx">
+        <col class="colidad">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Espião</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Cantor</td>
+        </tr>
+    </table>
+</body>
+</html>
