@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(14, 14, 15);
+}
+
+body{
+    background: url(imagens/fundo-de-tecnologia-azul.jpg) no-repeat;
+    position: fixed;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url(imagens/frame-iphone.png) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+iframe#tela{
+    position: relative;
+    height: 472px;
+    width: 268px;
+    transform: translate(0, 17%);
+    padding-left: 22px;
+}
