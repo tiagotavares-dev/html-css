@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+    <body>
+
+        <div>
+            <div>
+
+            <h1>Saiba qual é seu signo!</h1>
+
+            </div>
+
+            <h3 for="dataNascimento">Qual é sua data de nascimento?</h3>
+
+            <input id="input" type="date" name="dataNascimento" required>
+
+            <button id="button" type="submit" value="submit">Ir</button>
+
+        </div>
+
+        <script>
+
+            let button = document.getElementById( "button" );
+
+            let input = document.getElementById( "input" );
+
+            button.addEventListener( 'click', () => {
+
+            let data = input.value.split( '-' ).map( Number );
+
+            let mes = data[1];
+
+            let dia = data[2];
+
+            if ( ( dia >= 21 && mes == 3 ) || ( dia <= 20 && mes == 4 ) )
+
+            window.open('https://astrologialuzesombra.com.br/horoscopo/signo-aries/');
+
+            if ( ( dia >= 21 && mes == 4 ) || ( dia <= 21 && mes == 5 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-touro/' );
+
+            if ( ( dia >= 22 && mes == 5 ) || ( dia <= 21 && mes == 6 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-gemeos' );
+
+            if ( ( dia >= 21 && mes == 6 ) || ( dia <= 23 && mes == 7 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-cancer' );
+
+            if ( ( dia >= 24 && mes == 7 ) || ( dia <= 23 && mes == 8 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-leao' );
+
+            if ( ( dia >= 24 && mes == 8 ) || ( dia <= 23 && mes == 9 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-virgem' );
+
+            if ( ( dia >= 24 && mes == 9 ) || ( dia <= 23 && mes == 10 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-libra' );
+
+            if ( ( dia >= 24 && mes == 10 ) || ( dia <= 22 && mes == 11 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-escorpiao' );
+
+            if ( ( dia >= 23 && mes == 11 ) || ( dia <= 21 && mes == 12 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-sagitario' );
+
+
+            if ( ( dia >= 22 && mes == 12 ) || ( dia <= 20 && mes == 1 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-capricornio' );
+
+            if ( ( dia >= 21 && mes == 1 ) || ( dia <= 19 && mes == 2 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-aquario' );
+
+            if ( ( dia >= 20 && mes == 2 ) || ( dia <= 20 && mes == 3 ) )
+
+            window.open( 'https://astrologialuzesombra.com.br/horoscopo/signo-peixes' );
+
+            } );
+
+        </script>
+
+    </body>
+
+</html>
